@@ -337,8 +337,8 @@
               <div class="overview-details">
                 <p>
                   <span>Details:</span> @@IncidentDetails@@<br/>
-                  <span>Telstra SMEC Incident ID#:</span> @@TelstraID@@<br/>
-                  <span>IBM Incident ID#:</span> @@OtherID@@
+                  <span>Incident ID#:</span> @@Incident ID@@<br/>
+                  <span>Other Incident ID#:</span> @@OtherID@@
                 </p>
               </div>
             </div>
@@ -387,7 +387,7 @@
     var statusSetting = function(overview, status){
       var informationColor = "#D6F6FF";
       var warningColor = "#FFF6A5";
-      var averageColor = "#FFB689";
+      var averageColor = "#FF9900";
       var highColor = "#FF9999";
       var disasterColor = "#FF3838";
       var okColor = "#19873E";
@@ -429,7 +429,7 @@
       main();
       statusSetting("business impact", "disaster");
       statusSetting("recovery", "ok");
-      statusSetting("incident details", "high");
+      statusSetting("incident details", "average");
     });
 
   </script>
